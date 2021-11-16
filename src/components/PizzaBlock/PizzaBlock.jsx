@@ -3,7 +3,7 @@ import classNames from "classnames";
 import Button from "../Button";
 
 function PizzaBlock ({id, name, imageUrl, price, types, sizes, onClickAddPizza, addedCount})  {
-  const availableTypes = ['tiny', 'traditional'];
+  const availableTypes = ['thin', 'traditional'];
   const availableSizes = [26, 30, 40];
 
   const [activeType, setActiveType] = useState(types[0]);
@@ -55,7 +55,7 @@ function PizzaBlock ({id, name, imageUrl, price, types, sizes, onClickAddPizza, 
                 active: activeSize === index,
                 disabled: !sizes.includes(size)
               })}>
-              {size} sm.
+              {size} cm.
             </li>
           ))}
         </ul>

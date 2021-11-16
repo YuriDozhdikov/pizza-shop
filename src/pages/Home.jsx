@@ -5,7 +5,7 @@ import {setCategory, setSortBy} from "../redux/actions/filters";
 import {fetchPizzas} from "../redux/actions/pizzas";
 import {addPizzaToCart} from "../redux/actions/cart";
 
-const categoryNames = ['Meet', 'Vegetarian', 'Grill', 'Spice', 'Closed'];
+const categoryNames = ['Meat', 'Vegetarian', 'Grill', 'Spicy', 'Original'];
 const sortItems = [
   {name: 'popular', type: 'popular', order: 'desc'},
   {name: 'price', type: 'price', order: 'desc'},

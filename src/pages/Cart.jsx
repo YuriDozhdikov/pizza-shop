@@ -92,8 +92,8 @@ function Cart() {
             </div>
             <div className="cart__bottom">
               <div className="cart__bottom-details">
-                <span> Total pizza: <b>{itemsCount} </b> </span>
-                <span> Total price: <b>{totalPrice} ₽</b> </span>
+                <span> Quantity: <b>{itemsCount} </b> </span>
+                <span> Total: <b>{totalPrice} ₽</b> </span>
               </div>
               <div className="cart__bottom-buttons">
                 <a href="/" className="button button--outline button--add go-back-btn">
@@ -115,11 +115,11 @@ function Cart() {
             <h2>Empty cart <span>😕</span></h2>
             <p>
               Probably, you didn't order anything.<br/>
-              For make order, go to the main page.
+              To make an order, go to the main page.
             </p>
             <img src={emptyCartImg} alt="Empty cart"/>
             <Link to={'/'} className="button button--black">
-              <span>To main page</span>
+              <span>Main page</span>
             </Link>
           </div>
         }
